@@ -1,0 +1,58 @@
+/* header.css */
+
+/* Ensure the Navbar has a shadow and rounded corners */
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Style the Navbar brand/logo */
+.navbar-brand img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+/* Center the title and make it responsive */
+.navbar .nav h1 {
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav h1:hover {
+  color: #ffc107; /* Bootstrap's warning color */
+}
+
+/* Responsive title size */
+@media (max-width: 768px) {
+  .navbar .nav h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Add some margin to the SearchBar for better spacing */
+.search-bar {
+  margin-left: auto;
+}
+
+/* Custom styles for the container */
+.container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+/* Dark background with a smooth transition */
+.navbar-dark {
+  background-color: #007bff; /* Primary color */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-dark:hover {
+  background-color: #0056b3; /* Darker shade of primary color */
+}

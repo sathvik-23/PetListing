@@ -1,0 +1,73 @@
+/* petdetails.css */
+
+/* Ensure the container has some padding for better spacing */
+.PetDetails {
+  padding: 20px;
+}
+
+/* Style the Row to be centered */
+.PetDetails .row {
+  justify-content: center;
+}
+
+/* Ensure the Card has a shadow and rounded corners */
+.card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px; /* Space from the top */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style the Card Image */
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  max-height: 300px; /* Adjusted max height for images */
+  object-fit: contain;
+  width: 100%;
+}
+
+/* Style the Card Body */
+.card-body {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background for card body */
+}
+
+/* Style the Card Title */
+.card-title {
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #343a40; /* Dark color for title */
+  margin-bottom: 15px;
+}
+
+/* Style the Card Text */
+.card-text {
+  font-size: 1.1rem;
+  color: #6c757d; /* Bootstrap's secondary text color */
+  line-height: 1.6;
+}
+
+/* Responsive Design: Ensure card layout looks good on smaller screens */
+@media (max-width: 768px) {
+  .card-img-top {
+    max-height: 200px; /* Adjust image height for smaller screens */
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  .PetDetails {
+    padding: 10px;
+  }
+}
